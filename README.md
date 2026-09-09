@@ -13,6 +13,9 @@ pulse-artists.csv
 | genre | Alternative metal |
 | origin | London England |
 | formed_year | 2016 |
+| founding_members | Vessel; II |
+| current_members | Vessel; II; III; IV |
+| notable_former_members | None |
 | status | Active |
 | bio | Anonymous English band known for blending heavy music with atmospheric pop and electronic influences |
 | image_url | https://commons.wikimedia.org/wiki/Special:Redirect/file/ST2024_TPA_%28cropped%29.jpg |
