@@ -23,3 +23,8 @@ pulse-artists.csv
 1. Which artists in Pulse are from the same country or region?
 2. Which artists formed most recently?
 3. Which genres are represented by the artists in Pulse?
+
+## Links
+
+- Live: https://mattwainwright-dev.github.io/capstone/
+- Repo: https://github.com/mattwainwright-dev/capstone
