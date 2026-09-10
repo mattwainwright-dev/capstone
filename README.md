@@ -1,6 +1,8 @@
 ## The problem
 
-A music fan discovering a new band needs a quick way to learn who the artist is because basic information is often scattered across different places. My page will let them search for an artist by name and show a clear profile with the artist's genre, origin, year formed, status, bio, image, and official website.
+## The problem
+
+A music fan discovering a new band or group needs a quick way to learn who they are and hear what they sound like because that information is often scattered across different places. My app will let them choose from six artist cards, hear a short audio clip, and view a clear profile with the artist's genre, origin, year formed, members, status, bio, image, and official website.
 
 ## Data
 
@@ -31,3 +33,10 @@ pulse-artists.csv
 
 - Live: https://mattwainwright-dev.github.io/capstone/
 - Repo: https://github.com/mattwainwright-dev/capstone
+
+## Team
+
+Accountability group:
+- @SnDyMrn13
+- @Anastasia-2102
+- @Hexaxolotl
