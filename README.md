@@ -1,7 +1,5 @@
 ## The problem
 
-## The problem
-
 A music fan discovering a new band or group needs a quick way to learn who they are and hear what they sound like because that information is often scattered across different places. My app will let them choose from six artist cards, hear a short audio clip, and view a clear profile with the artist's genre, origin, year formed, members, status, bio, image, and official website.
 
 ## Data
@@ -40,3 +38,7 @@ Accountability group:
 - @SnDyMrn13
 - @Anastasia-2102
 - @Hexaxolotl
+
+<p align="right">
+  <img src="./images/mw-watermark-transparent.png" width="160" alt="MW watermark">
+</p>
