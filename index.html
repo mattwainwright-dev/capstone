@@ -7,8 +7,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
   </head>
   <body>
-    <main>
-      <h1>Pulse</h1>
-    </main>
+<main>
+  <section id="hero">
+    <h1>Pulse</h1>
+    <p>
+      A music fan discovering a new band or group needs a quick way to learn
+      who they are and hear what they sound like because that information is
+      often scattered across different places.
+    </p>
+  </section>
+
+  <section id="artists">
+    <h2>Choose an Artist</h2>
+
+    <button type="button" class="artist-card" data-artist="Sleep Token">
+      Sleep Token
+    </button>
+
+    <button type="button" class="artist-card" data-artist="Deftones">
+      Deftones
+    </button>
+
+    <button type="button" class="artist-card" data-artist="Bad Omens">
+      Bad Omens
+    </button>
+
+    <button type="button" class="artist-card" data-artist="Wu-Tang Clan">
+      Wu-Tang Clan
+    </button>
+
+    <button type="button" class="artist-card" data-artist="Outkast">
+      Outkast
+    </button>
+
+    <button type="button" class="artist-card" data-artist="Beastie Boys">
+      Beastie Boys
+    </button>
+  </section>
+
+  <section id="artist-detail" hidden>
+  <button type="button" id="back-button">← Back</button>
+
+  <h2 id="detail-name">Artist Detail</h2>
+  <p id="detail-genre"></p>
+  <p id="detail-origin"></p>
+  <p id="detail-formed"></p>
+  <p id="detail-bio"></p>
+</section>
+</main>
+<script src="script.js"></script>
   </body>
 </html>
