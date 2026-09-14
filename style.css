@@ -28,6 +28,7 @@
     transform 0.45s ease,
     box-shadow 0.45s ease,
     border-color 0.45s ease;
+    opacity: 0.45s ease;
 }
 
 .artist-card::after {
@@ -67,4 +68,48 @@
 #detail-image {
   width: 320px;
   max-width: 100%;
+}
+
+.flying-card {
+  position: fixed;
+  margin: 0;
+  z-index: 1000;
+  pointer-events: none;
+
+  transform: none;
+}
+
+.flying-card.fly-away {
+  animation: fly-away 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fly-away {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+
+  to {
+    transform:
+      rotateY(-720deg)
+      translate(-140px, -60px)
+      scale(0.2);
+    opacity: 0;
+  }
+}
+
+#artist-detail.profile-enter {
+  animation: profile-enter 0.5s ease-out;
+}
+
+@keyframes profile-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

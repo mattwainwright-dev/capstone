@@ -19,6 +19,17 @@ const detailWebsite = document.getElementById("detail-website");
 artistCards.forEach((card) => {
   card.addEventListener("click", async () => {
     const artistName = card.dataset.artist;
+    const cardRect = card.getBoundingClientRect();
+    const flyingCard = card.cloneNode(true);
+
+    flyingCard.classList.add("flying-card");
+
+    flyingCard.style.left = cardRect.left + "px";
+    flyingCard.style.top = cardRect.top + "px";
+    flyingCard.style.width = cardRect.width + "px";
+    flyingCard.style.height = cardRect.height + "px";
+
+document.body.appendChild(flyingCard);
 
     const url =
       "https://student-data-api.mwwainwright1014-9d9.workers.dev/api/v1/datasets/pulse-artists/records?search=" +
@@ -41,13 +52,22 @@ artistCards.forEach((card) => {
     detailWebsite.href = artist.official_url;
     detailBio.textContent = "Bio: " + artist.bio;
 
-    hero.hidden = true;
-    artists.hidden = true;
-    artistDetail.hidden = false;
+  hero.hidden = true;
+  artists.hidden = true;
+  artistDetail.hidden = false;
+
+  artistDetail.classList.add("profile-enter");
+  flyingCard.classList.add("fly-away");
+
+  setTimeout(() => {
+  flyingCard.remove();
+  artistDetail.classList.remove("profile-enter");
+  }, 700);  
   });
 });
 
 backButton.addEventListener("click", () => {
+  artistCards.forEach((card) => card.classList.remove("is-flipping"));
   artistDetail.hidden = true;
   hero.hidden = false;
   artists.hidden = false;
