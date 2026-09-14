@@ -321,3 +321,36 @@ button.artist-card:hover {
   0 0 7px rgba(0, 245, 255, 0.85),
   0 0 14px rgba(0, 245, 255, 0.45);
 }
+
+#attributions {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+
+  background: #02070a;
+  border: 1px solid rgba(0, 245, 255, 0.45);
+  border-radius: 12px;
+}
+
+#attributions summary {
+  color: var(--pulse-cyan);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#attributions p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.75rem 0;
+}
+
+#attributions a {
+  color: var(--pulse-cyan);
+  text-decoration-color: rgba(0, 245, 255, 0.65);
+}
+
+#attributions a:hover {
+  color: var(--pulse-cyan);
+
+  text-shadow:
+    0 0 4px var(--pulse-cyan),
+    0 0 10px rgba(0, 245, 255, 0.55);
+}
