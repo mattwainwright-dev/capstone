@@ -1,0 +1,60 @@
+:root {
+  --pulse-cyan: #00f5ff;
+}
+
+#artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  perspective: 1200px;
+}
+
+#artists h2 {
+  grid-column: 1 / -1;
+}
+
+.artist-card {
+  position: relative;
+  min-height: 220px;
+  border: 1px solid var(--pulse-cyan);
+  border-radius: 18px;
+  background: #090d12;
+  color: white;
+
+  transform: rotateX(55deg);
+  transform-origin: center bottom;
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+.artist-card::after {
+  content: "Feel " attr(data-artist) "'s Pulse";
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+
+  transform: translateX(-50%);
+  opacity: 0;
+
+  color: var(--pulse-cyan);
+  white-space: nowrap;
+
+  transition: opacity 0.35s ease;
+}
+
+.artist-card:hover {
+  transform: rotateX(0deg) translateY(-18px) scale(1.03);
+
+  box-shadow:
+  0 0 10px var(--pulse-cyan),
+  0 0 25px rgba(0, 245, 255, 0.9),
+  0 0 50px rgba(0, 245, 255, 0.65),
+  0 0 85px rgba(0, 245, 255, 0.35);
+}
+
+.artist-card:hover::after {
+  opacity: 1;
+}
