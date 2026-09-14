@@ -61,3 +61,12 @@ Accountability group:
 <p align="right">
   <img src="./images/mw-watermark-transparent.png" width="160" alt="MW watermark">
 </p>
+
+## Image Attributions
+
+- Sleep Token — photo by Wünderbrot, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231007_sleep_token.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Deftones — photo by Khashayar Karimi, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Deftones_live.jpg), attribution required.
+- Bad Omens — photo by Wünderbrot, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231006_bad_omens.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- Wu-Tang Clan — photo by Festival Eurockéennes, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wu-Tang_Clan.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
+- Outkast — photo by David Shankbone, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:OutKast_Andre_3000_Big_Boi_Performing_Shankbone_2014.jpg), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+- Beastie Boys — photo by Masao Nakagami, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Beastie-boys.jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
