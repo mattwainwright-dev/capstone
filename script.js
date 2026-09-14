@@ -9,6 +9,12 @@ const detailGenre = document.getElementById("detail-genre");
 const detailOrigin = document.getElementById("detail-origin");
 const detailFormed = document.getElementById("detail-formed");
 const detailBio = document.getElementById("detail-bio");
+const detailImage = document.getElementById("detail-image");
+const detailFounding = document.getElementById("detail-founding");
+const detailCurrent = document.getElementById("detail-current");
+const detailFormer = document.getElementById("detail-former");
+const detailStatus = document.getElementById("detail-status");
+const detailWebsite = document.getElementById("detail-website");
 
 artistCards.forEach((card) => {
   card.addEventListener("click", async () => {
@@ -26,6 +32,13 @@ artistCards.forEach((card) => {
     detailGenre.textContent = "Genre: " + artist.genre;
     detailOrigin.textContent = "Origin: " + artist.origin;
     detailFormed.textContent = "Formed: " + artist.formed_year;
+    detailFounding.textContent = "Founding members: " + artist.founding_members;
+    detailCurrent.textContent = "Current members: " + artist.current_members;
+    detailFormer.textContent = "Notable former members: " + artist.notable_former_members;
+    detailStatus.textContent = "Status: " + artist.status;
+    detailImage.src = artist.image_url;
+    detailImage.alt = artist.artist_name + " image";
+    detailWebsite.href = artist.official_url;
     detailBio.textContent = "Bio: " + artist.bio;
 
     hero.hidden = true;

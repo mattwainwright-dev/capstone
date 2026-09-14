@@ -63,3 +63,8 @@
 .artist-card:hover::after {
   opacity: 1;
 }
+
+#detail-image {
+  width: 320px;
+  max-width: 100%;
+}
