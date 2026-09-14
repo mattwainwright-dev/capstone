@@ -6,6 +6,10 @@ A music fan discovering a new band or group needs a quick way to learn who they 
 
 ![My wireframe](wireframe.png)
 
+## What changed
+
+My original plan was to let a visitor choose from six artist cards and see basic information about the selected artist. The finished version grew into a fuller artist experience with complete API profiles, images, official website links, and a short audio clip for every artist. I also added the card lift and glow interaction, a seamless card-to-profile transition, and the full Pulse visual style with the cyan particle background and custom styling. The overall structure stayed close to my wireframe, but the final page became much more interactive and polished than I originally planned.
+
 ### Sections
 
 - **Hero** — the centered Pulse hero introduces the app.
