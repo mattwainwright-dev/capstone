@@ -45,6 +45,11 @@
   transition: opacity 0.35s ease;
 }
 
+.artist-card[data-artist="Wu-Tang Clan"]::after,
+.artist-card[data-artist="Beastie Boys"]::after {
+  font-size: 0.85rem;
+}
+
 .artist-card:hover {
   transform: rotateX(0deg) translateY(-18px) scale(1.03);
 
