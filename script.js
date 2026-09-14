@@ -15,6 +15,7 @@ const detailCurrent = document.getElementById("detail-current");
 const detailFormer = document.getElementById("detail-former");
 const detailStatus = document.getElementById("detail-status");
 const detailWebsite = document.getElementById("detail-website");
+let currentAudio = null;
 
 artistCards.forEach((card) => {
   card.addEventListener("click", async () => {
@@ -38,6 +39,14 @@ document.body.appendChild(flyingCard);
     const response = await fetch(url);
     const data = await response.json();
     const artist = data.records[0];
+
+  if (currentAudio) {
+   currentAudio.pause();
+   currentAudio.currentTime = 0;
+}
+
+  currentAudio = new Audio(artist.audio_url);
+  currentAudio.play();
 
     detailName.textContent = artist.artist_name;
     detailGenre.textContent = "Genre: " + artist.genre;
@@ -67,6 +76,10 @@ document.body.appendChild(flyingCard);
 });
 
 backButton.addEventListener("click", () => {
+  if (currentAudio) {
+  currentAudio.pause();
+  currentAudio.currentTime = 0;
+}
   artistCards.forEach((card) => card.classList.remove("is-flipping"));
   artistDetail.hidden = true;
   hero.hidden = false;
