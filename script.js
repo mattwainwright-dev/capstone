@@ -65,6 +65,11 @@ document.body.appendChild(flyingCard);
   artists.hidden = true;
   artistDetail.hidden = false;
 
+  artistDetail.scrollIntoView({
+  behavior: "smooth",
+  block: "start"
+});
+
   artistDetail.classList.add("profile-enter");
   flyingCard.classList.add("fly-away");
 
