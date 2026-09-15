@@ -63,7 +63,7 @@ body {
 
 .artist-card[data-artist="Wu-Tang Clan"]::after,
 .artist-card[data-artist="Beastie Boys"]::after {
-  font-size: 0.85rem;
+  font-size: 0.7rem;
 }
 
 .artist-card:hover {
