@@ -46,7 +46,7 @@ document.body.appendChild(flyingCard);
 }
 
   currentAudio = new Audio(artist.audio_url);
-  currentAudio.volume = 0.70;
+  currentAudio.volume = 0.50;
   currentAudio.play();
 
     detailName.textContent = artist.artist_name;
