@@ -51,7 +51,7 @@ pulse-artists.csv
 
 ## Links
 
-- Live: https://mattwainwright-dev.github.io/capstone/
+- Live: https://mattwainwright-dev.github.io/capstone
 - Repo: https://github.com/mattwainwright-dev/capstone
 
 ## Team
