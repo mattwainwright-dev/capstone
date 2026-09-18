@@ -62,6 +62,10 @@ Accountability group:
 - @Anastasia-2102
 - @Hexaxolotl
 
+## Reflection
+
+I planned Pulse as an interactive music discovery page where users could quickly learn about different artists through live API data. I shipped six clickable artist cards that load artist profiles, information, and audio from my own dataset and API. The biggest change was replacing the original text-search idea with artist cards because they make the choices immediately visible and create a more engaging user experience.
+
 <p align="right">
   <img src="./images/mw-watermark-transparent.png" width="160" alt="MW watermark">
 </p>
