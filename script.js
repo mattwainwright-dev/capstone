@@ -38,7 +38,17 @@ document.body.appendChild(flyingCard);
 
     const response = await fetch(url);
     const data = await response.json();
+
+    console.log(data);
+
     const artist = data.records[0];
+
+    console.log(artist);
+
+    if (!artist) {
+      console.log("No artist found.");
+      return;
+    }
 
   if (currentAudio) {
    currentAudio.pause();
