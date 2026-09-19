@@ -1,7 +1,9 @@
+/* Pulse color variable keeps the main cyan accent consistent throughout the site. */
 :root {
   --pulse-cyan: #00f5ff;
 }
 
+/* Global page background creates the dark Pulse atmosphere with the repeating particle image. */
 body {
   background-color: #090d12;
   background-image: url("images/pulse-particles-bg.png");
@@ -16,6 +18,7 @@ body {
   margin: 2rem auto 0;
 }
 
+/* Artist cards use a three-column grid and perspective to create the angled 3D card layout. */
 #artists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -27,6 +30,7 @@ body {
   grid-column: 1 / -1;
 }
 
+/* Default artist-card styling tilts each card forward and prepares it for the hover transition. */
 .artist-card {
   position: relative;
   min-height: 220px;
@@ -45,6 +49,7 @@ body {
     opacity: 0.45s ease;
 }
 
+/* Pseudo-element adds the "Feel the Artist's Pulse" message without adding extra HTML. */
 .artist-card::after {
   content: "Feel " attr(data-artist) "'s Pulse";
   position: absolute;
@@ -66,6 +71,7 @@ body {
   font-size: 0.7rem;
 }
 
+/* Hover interaction lifts, rotates, and adds the cyan glow to bring the selected card toward the user. */
 .artist-card:hover {
   transform: rotateX(0deg) translateY(-18px) scale(1.03);
 
@@ -76,11 +82,13 @@ body {
   0 0 85px rgba(0, 245, 255, 0.35);
 }
 
+/* Reveal and animate the Pulse message while the artist card is hovered. */
 .artist-card:hover::after {
   opacity: 1;
   animation: mftp-pulse 1.8s ease-in-out infinite;
 }
 
+/* Pulse animation changes the message scale and glow to create a heartbeat-like visual effect. */
 @keyframes mftp-pulse {
   0%,
   100% {
@@ -117,6 +125,7 @@ body {
   animation: fly-away 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+/* Selected card spins, moves, shrinks, and fades away as the artist profile opens. */
 @keyframes fly-away {
   from {
     transform: none;
@@ -132,6 +141,7 @@ body {
   }
 }
 
+/* Profile entrance animation gives the newly displayed artist detail section a smooth transition. */
 #artist-detail.profile-enter {
   animation: profile-enter 0.5s ease-out;
 }
@@ -184,6 +194,7 @@ body {
     0 0 20px rgba(0, 245, 255, 0.35);
 }
 
+/* Artist profile uses a dark panel, cyan border, and glow to separate API results from the background. */
 #artist-detail {
   padding: 2rem;
 
@@ -228,6 +239,7 @@ body {
     0 0 30px rgba(0, 245, 255, 0.18);
 }
 
+/* Official website link is styled as an interactive Pulse-themed button. */
 #detail-website {
   display: inline-block;
   margin-top: 1rem;
@@ -262,6 +274,7 @@ body {
     0 0 45px rgba(0, 245, 255, 0.45);
 }
 
+/* Back button returns the user to artist selection and uses matching hover feedback. */
 #back-button {
   background: #02070a;
   border: 1px solid var(--pulse-cyan);
@@ -299,6 +312,7 @@ footer a {
     0 0 4px rgba(0, 245, 255, 0.45);
 }
 
+/* Override Pico button defaults so artist cards keep the custom Pulse design. */
 button.artist-card {
   appearance: none;
 
@@ -342,6 +356,7 @@ button.artist-card:hover {
   0 0 14px rgba(0, 245, 255, 0.45);
 }
 
+/* Attribution section keeps image licensing information available without distracting from the main experience. */
 #attributions {
   margin-top: 2rem;
   padding: 1rem 1.25rem;
